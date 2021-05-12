@@ -1,0 +1,27 @@
+<div class="allemp">
+    <h3>All Employee List</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+           
+            <tr *ngFor="let employee of employees | async">
+                <td>{{employee.id}}</td>
+                <td>{{employee.firstName}}</td>
+                <td>{{employee.email}}</td>
+                <td><button class="btn btn-primary" routerLink="/update-employee">Update</button></td>
+
+                <td><button (click)="deleteEmployee(employee.id)" class="btn btn-primary">Delete</button></td>
+                <td><button (click)="employeeDetails(employee.id)" class="btn btn-primary" routerLink="/employee-details">Details</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

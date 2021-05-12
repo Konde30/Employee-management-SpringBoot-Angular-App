@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand" style="color: white; font-weight: bolder;font-size: 40px;">Employee Management </a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navherader">
+      <ul>
+        <li class="active"><a routerLink="/app.component.html">Home</a></li>
+        <li><a routerLink="/create-employee">Create Employee</a></li>
+        <li><a routerLink="/all-employee">All Employee List</a></li>
+
+      </ul>
+
+    </nav>
+    <router-outlet></router-outlet>
+
+    <!--  <app-create-employee></app-create-employee>
+   <app-all-employee></app-all-employee>
+    <app-employee-details></app-employee-details>
+    <app-update-employee></app-update-employee> -->
+  </div>
+ 
+</body>
+</html>

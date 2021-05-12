@@ -1,0 +1,16 @@
+<div class="details">
+    <div class="card" *ngIf="employee">
+        <div class="card-header" >
+          <h2>Employee Details</h2>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title"> {{employee.firstName}} {{employee.lastName}}</h4>
+          <h5>Employee Id:   {{employee.empId}}</h5>
+          <h5>Email:   {{employee.email}}</h5>
+          <h5>Designation: Software Developer</h5>
+          
+          <a href="#" (click)="list()" class="btn btn-primary">Go Back</a>
+          
+        </div>
+      </div>
+</div>
